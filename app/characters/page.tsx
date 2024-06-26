@@ -1,37 +1,9 @@
 "use client";
 
+import { CHARACTERS_QUERY } from "@/queries/characterQueries";
 import { Character } from "@/types";
-import { gql, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import Link from "next/link";
-
-export const CHARACTERS_QUERY = gql`
-  query CharactersQuery($pageID: Int) {
-    characters(page: $pageID) {
-      info {
-        count
-        pages
-        next
-        prev
-      }
-      results {
-        name
-        id
-        type
-        gender
-        image
-        status
-        species
-        origin {
-          name
-          dimension
-        }
-        location {
-          name
-        }
-      }
-    }
-  }
-`;
 
 export default function CharactersPage() {
   const { loading, data, refetch } = useQuery(CHARACTERS_QUERY);

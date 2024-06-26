@@ -1,31 +1,11 @@
 "use client";
 
-import { gql, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { Character } from "@/types";
-
-export const CHARACTER_QUERY = gql`
-  query CharacterQuery($id: ID!) {
-    character(id: $id) {
-      name
-      id
-      type
-      gender
-      image
-      status
-      species
-      origin {
-        name
-        dimension
-      }
-      location {
-        name
-      }
-    }
-  }
-`;
+import { CHARACTER_QUERY } from "@/queries/characterQueries";
 
 export default function CharactersDetailPage() {
   const params = useParams<{ slug: string }>();
