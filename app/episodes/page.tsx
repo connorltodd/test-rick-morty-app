@@ -50,7 +50,10 @@ export default function EpisodesPage() {
               </thead>
               <tbody className="overflow-scroll">
                 {data?.episodes.results.map((episode: Episode) => (
-                  <tr className="border-2 border-slate-700 h-20">
+                  <tr
+                    key={episode.id}
+                    className="border-2 border-slate-700 h-20"
+                  >
                     <td className="capitalize pl-5">{episode.name}</td>
                     <td className="capitalize">{episode.episode}</td>
                     <td className="capitalize">{episode.air_date}</td>

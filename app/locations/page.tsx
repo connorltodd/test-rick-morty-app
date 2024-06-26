@@ -50,7 +50,10 @@ export default function LocationsPage() {
               </thead>
               <tbody className="overflow-scroll">
                 {data?.locations.results.map((location: Location) => (
-                  <tr className="border-2 border-slate-700 h-20">
+                  <tr
+                    key={location.id}
+                    className="border-2 border-slate-700 h-20"
+                  >
                     <td className="capitalize pl-5">{location.name}</td>
                     <td className="capitalize">{location.type}</td>
                     <td className="capitalize">{location.dimension}</td>

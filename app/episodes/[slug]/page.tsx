@@ -54,6 +54,7 @@ export default function LocationsDetailPage() {
                   <div className="flex flex-col gap-2">
                     {episode.characters.map((resident: Resident) => (
                       <Link
+                        key={resident.id}
                         className="capitalize text-center block text-green-700 font-bold py-2 px-4 border-2 border-green-700 rounded"
                         href={`/characters/${resident.id}`}
                       >
