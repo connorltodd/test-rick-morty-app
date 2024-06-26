@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page renders homepage unchanged 1`] = `
+<div>
+  <main
+    class="flex justify-center items-center pt-20 flex-col gap-20"
+  >
+    <img
+      alt="rick and morty"
+      data-nimg="1"
+      decoding="async"
+      height="200"
+      loading="lazy"
+      src="/_next/image?url=%2Fimg.jpg&w=640&q=75"
+      srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=640&q=75 2x"
+      style="color: transparent;"
+      width="200"
+    />
+    <h1
+      class="text-lg w-[40rem] text-center"
+    >
+      Welcome to the Rick and Morty API Explorer, where you can get more information on all of your favourite Characters, Episodes and Locations.
+       
+    </h1>
+    <ul
+      class="flex justify-center gap-20"
+    >
+      <li
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-green-700 rounded"
+      >
+        <a
+          href="/characters"
+        >
+          View Characters
+        </a>
+      </li>
+      <li
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-green-700 rounded"
+      >
+        <a
+          href="/locations"
+        >
+          View Locations
+        </a>
+      </li>
+      <li
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-green-700 rounded"
+      >
+        <a
+          href="/episodes"
+        >
+          View Episodes
+        </a>
+      </li>
+    </ul>
+  </main>
+</div>
+`;
