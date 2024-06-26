@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { render, screen, waitFor } from "@testing-library/react";
 import { MockedProvider } from "@apollo/client/testing";
-import { CHARACTER_QUERY } from "../app/characters/[slug]/page";
+import { CHARACTER_QUERY } from "../queries/characterQueries";
 import CharactersDetailPage from "../app/characters/[slug]/page";
 import { useParams } from "next/navigation";
 

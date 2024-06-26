@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import { MockedProvider } from "@apollo/client/testing";
-import { CHARACTERS_QUERY } from "../app/characters/page";
+import { CHARACTERS_QUERY } from "../queries/characterQueries";
 import CharactersPage from "../app/characters/page";
 
 const mocks = [
